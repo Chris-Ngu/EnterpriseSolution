@@ -6,3 +6,21 @@ This program is not used for commercial purposes, this is used to learn differen
 
 If you would like to help out with development or have questions about the project, feel free to contact me on discord @GruntyBunty#3342
 
+Experimental ideas:
+
+Login with connection to a MYSQL DB
+
+Messanger with different coworkers
+
+Webcam meetups
+
+Display DB information
+
+Email/ messanger notification service
+
+Calender that shows group tasks and events coming up that everyone can see
+
+Virtual LAN to access files and access computers in the same network
+
+
+
