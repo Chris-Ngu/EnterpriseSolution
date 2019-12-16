@@ -6,7 +6,7 @@ This program is not used for commercial purposes, this is used to learn differen
 
 If you would like to help out with development or have questions about the project, feel free to contact me on discord @GruntyBunty#3342
 
-Experimental ideas:
+# Experimental ideas:
 
 Login with connection to a MYSQL DB
 
