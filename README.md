@@ -3,4 +3,4 @@
 
 Experiental/Dev branch of EnterpriseSolution
 
-Changes will be implemented here before pushed to Master branch
+Stable branch of repo, changes will be made in Experimental/Dev befoe pushed here
