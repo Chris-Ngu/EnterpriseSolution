@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EnterpriseSolution
 {
-    public partial class Form1 : Form
+    public partial class Registration : Form
     {
-        public Form1()
+        public Registration()
         {
             InitializeComponent();
         }
@@ -68,6 +68,25 @@ namespace EnterpriseSolution
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //need to check if it is empty or if left unchanged from defaults
+            if (textBox1.Text == "" || textBox1.Text == "Username" || textBox2.Text == "" || textBox2.Text == "Password" || textBox3.Text == "" || textBox3.Text == "Email")
+            {
+                button2.Text = "ERROR: TRY AGAIN";
+                button2.BackColor = Color.Maroon;
+            }
+            else
+            {
+                button2.BackColor = Color.OliveDrab;
+                button2.Text = "Loading...";
+                string[] loginInformation = {textBox1.Text,textBox2.Text,textBox3.Text}; //Username, password, email
+                // include information to register in the domain, as well as check for existing usernames/ emails
+                // Catch no connection error in case the server isn't online
+            }
         }
     }
 }
