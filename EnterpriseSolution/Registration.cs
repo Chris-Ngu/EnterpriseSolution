@@ -74,7 +74,7 @@ namespace EnterpriseSolution
         private void button2_Click(object sender, EventArgs e)
         {
             //need to check if it is empty or if left unchanged from defaults
-            if (textBox1.Text == "" || textBox1.Text == "Username" || textBox2.Text == "" || textBox2.Text == "Password" || textBox3.Text == "" || textBox3.Text == "Email")
+            if (textBox1.Text.Contains(" ") || textBox1.Text == "Username" || textBox2.Text.Contains(" ") || textBox2.Text == "Password" || textBox3.Text.Contains("") || textBox3.Text == "Email")
             {
                 button2.Text = "ERROR: TRY AGAIN";
                 button2.BackColor = Color.Maroon;
@@ -83,10 +83,32 @@ namespace EnterpriseSolution
             {
                 button2.BackColor = Color.OliveDrab;
                 button2.Text = "Loading...";
-                string[] loginInformation = {textBox1.Text,textBox2.Text,textBox3.Text}; //Username, password, email
+                string[] registrationInformation = {textBox1.Text,textBox2.Text,textBox3.Text}; //Username, password, email
                 // include information to register in the domain, as well as check for existing usernames/ emails
                 // Catch no connection error in case the server isn't online
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Startup startup = new Startup();
+            startup.ShowDialog();
+            this.Close();
+        }
+
+        private void Registration_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+        Point lastPoint;
+        private void Registration_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }
