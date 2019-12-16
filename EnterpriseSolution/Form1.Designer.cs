@@ -178,24 +178,27 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(31, 353);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(275, 46);
             this.button1.TabIndex = 8;
+            this.button1.TabStop = false;
             this.button1.Text = "Sign In";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(31, 424);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(275, 46);
             this.button2.TabIndex = 9;
+            this.button2.TabStop = false;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -211,6 +214,7 @@
             this.button3.Size = new System.Drawing.Size(43, 40);
             this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
