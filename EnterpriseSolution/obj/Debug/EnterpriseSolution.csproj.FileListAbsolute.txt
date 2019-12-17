@@ -8,3 +8,15 @@ C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\obj\Debug\Enterpris
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.pdb
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Registration.resources
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Startup.resources
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\EnterpriseSolution.exe.config
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\EnterpriseSolution.exe
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\EnterpriseSolution.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\MySql.Data.dll
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.csprojAssemblyReference.cache
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Registration.resources
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Properties.Resources.resources
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Startup.resources
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.csproj.GenerateResource.cache
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.csproj.CopyComplete
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.exe
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.pdb
