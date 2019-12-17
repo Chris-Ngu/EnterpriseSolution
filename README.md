@@ -5,6 +5,8 @@ Experiental/Dev branch of EnterpriseSolution
 
 Changes will be implemented here before pushed to Master branch
 
+Currently using MYSQL and connector/net for VS
+
 This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, and the basic technological needs of an innovating business. If you would like to understand this concept or would like to help in development, please contact me on Discord: GruntyBunty#3342
 
 # Experimental ideas
