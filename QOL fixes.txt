@@ -1,5 +1,12 @@
-UI fixes   -Updated 12-18-19
+UI fixes   -Updated 12-18-19 by Chris Nguyen
 --------
 .Somehow remember login details without losing security for client users
 .Fix registration form transparency, might have to redo the whole form
 .Placeholder pictures being used, create logo and actual photos
+
+Class cleanup
+-------
+MySQLNetworking class:
+.Seperate the conn string so that it won't be cumbersome to hardcode the sql server address
+.Code cleanup in SQL statements
+.Email confirmations after registration to verify account

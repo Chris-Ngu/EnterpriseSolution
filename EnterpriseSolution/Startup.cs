@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace EnterpriseSolution
 {
@@ -80,7 +79,6 @@ namespace EnterpriseSolution
         {
             if (this.textBox1.Text == "Username" || this.textBox1.Text.Contains(" ") || this.textBox2.Text == "Password" || this.textBox2.Text.Contains(" "))
             {
-
                 button1.Text = "Error: TRY AGAIN";
                 button1.BackColor = Color.Maroon;
             }
@@ -90,40 +88,7 @@ namespace EnterpriseSolution
                 button1.Text = "Loading...";
                 string username = textBox1.Text;
                 string password = textBox2.Text;
-                login(username, password);
-            }
-        }
-        private void login(string username, string password)
-        {
-            //Line 99 will mess up: Charset not found in key
-            string connstring = @"server=localhost;uid=root;pwd=password;database=enterprisesolution;CharSet=utf8";
-            MySqlConnection conn = null;
-            try { 
-                conn = new MySql.Data.MySqlClient.MySqlConnection();
-                conn.ConnectionString = connstring;
-                conn.Open();
-
-                //login to MySQL
-                MySqlCommand cmd = new MySqlCommand("SELECT username, password FROM login l WHERE l.username = '" + username +"' AND l.password = '" + password +"'", conn);
-                MySqlDataReader dr = cmd.ExecuteReader(); //This line messes up if your charset in MySQL isn't set to UTF8
-                while (dr.Read())
-                {
-                    string usernameFromMySQL = (string)dr["username"];
-                    string passwordFromMySQL = (string)dr["password"];
-                    string secondUsernameFromMySQL = (string)dr["username"];
-                }
-            }
-            
-                catch (Exception ex)
-            {
-                Console.WriteLine("Error: {0}", ex.ToString());
-            }
-            finally
-            {
-                if (conn != null)
-                {
-                    conn.Close();
-                }
+                EnterpriseSolution.MySQLNetworking.login(username, password);
             }
         }
     }
