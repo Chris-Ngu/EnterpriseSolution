@@ -88,7 +88,7 @@ namespace EnterpriseSolution
                 string username = textBox1.Text;
                 string password = textBox2.Text;
                 string email = textBox3.Text;
-                RegistrationSQL(username, password, email);
+                EnterpriseSolution.MySQLNetworking.Registration(username, password, email);
             }
         }
 
@@ -112,33 +112,6 @@ namespace EnterpriseSolution
         private void Registration_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
-        }
-
-        private void RegistrationSQL(string username, string password, string email)
-        {
-            string connstring = @"server=localhost;uid=root;pwd=password;database=enterprisesolution;Charset=utf8";
-            MySqlConnection conn = null;
-            try
-            {
-                conn = new MySql.Data.MySqlClient.MySqlConnection();
-                conn.ConnectionString = connstring;
-                conn.Open();
-
-                //INSERT mysql command here to register
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO login VALUES ('" + username + "', '" + email + "', '" + password + "')", conn);
-                cmd.ExecuteNonQuery();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Error: {0}", ex.ToString());
-            }
-            finally
-            {
-                if (conn != null)
-                {
-                    conn.Close();
-                }
-            }
         }
     }
 }
