@@ -104,11 +104,13 @@ namespace EnterpriseSolution
                 conn.Open();
 
                 //login to MySQL
-                MySqlCommand cmd = new MySqlCommand("SELECT username FROM login l WHERE l.username = '" + username +"'", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT username, password FROM login l WHERE l.username = '" + username +"' AND l.password = '" + password +"'", conn);
                 MySqlDataReader dr = cmd.ExecuteReader(); //This line messes up if your charset in MySQL isn't set to UTF8
                 while (dr.Read())
                 {
                     string usernameFromMySQL = (string)dr["username"];
+                    string passwordFromMySQL = (string)dr["password"];
+                    string secondUsernameFromMySQL = (string)dr["username"];
                 }
             }
             
