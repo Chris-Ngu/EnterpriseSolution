@@ -1,0 +1,5 @@
+UI fixes   -Updated 12-18-19
+--------
+.Somehow remember login details without losing security for client users
+.Fix registration form transparency, might have to redo the whole form
+.Placeholder pictures being used, create logo and actual photos
