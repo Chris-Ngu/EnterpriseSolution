@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RegConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegConfirm.Designer.cs">
+      <DependentUpon>RegConfirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySQLNetworking.cs" />
     <Compile Include="Registration.cs">
       <SubType>Form</SubType>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RegConfirm.resx">
+      <DependentUpon>RegConfirm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>

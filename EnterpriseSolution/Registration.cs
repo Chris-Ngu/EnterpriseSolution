@@ -89,6 +89,9 @@ namespace EnterpriseSolution
                 string password = textBox2.Text;
                 string email = textBox3.Text;
                 EnterpriseSolution.MySQLNetworking.Registration(username, password, email);
+                //Create popup window showing success
+                RegConfirm rC = new RegConfirm();
+                rC.ShowDialog();
             }
         }
 
