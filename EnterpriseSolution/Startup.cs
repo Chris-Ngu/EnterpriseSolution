@@ -102,12 +102,17 @@ namespace EnterpriseSolution
                 conn = new MySql.Data.MySqlClient.MySqlConnection();
                 conn.ConnectionString = connstring;
                 conn.Open();
-                //line 106, not getting querie. Might need to test with some int USING ' ' FOR USERNAME brackets maybe?
-                MySqlCommand cmd = new MySqlCommand("SELECT username FROM login l WHERE l.username =@username", conn);
-                cmd.Parameters.AddWithValue("@username", username);
-                MySqlDataReader dr = cmd.ExecuteReader();
+
+                //login to MySQL
+                MySqlCommand cmd = new MySqlCommand("SELECT username FROM login l WHERE l.username = '" + username +"'", conn);
+                MySqlDataReader dr = cmd.ExecuteReader(); //This line messes up if your charset in MySQL isn't set to UTF8
+                while (dr.Read())
+                {
+                    string usernameFromMySQL = (string)dr["username"];
+                }
             }
-            catch (Exception ex)
+            
+                catch (Exception ex)
             {
                 Console.WriteLine("Error: {0}", ex.ToString());
             }
