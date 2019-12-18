@@ -24,3 +24,9 @@ Public calander system for branch/ individual events that can be seen by everyon
 Email system used for registration, notifications, or any other purposes
 
 *MORE IDEAS WILL BE ADDED HERE AND SOME WILL BE DELETED AS THINGS GET IMPLEMENTED*
+
+# Working features
+
+Registration with MySQL server 12/18/19
+
+
