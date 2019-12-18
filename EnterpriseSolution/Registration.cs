@@ -125,7 +125,7 @@ namespace EnterpriseSolution
                 conn.Open();
 
                 //INSERT mysql command here to register
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO login VALUES ('" + username + "', '" + password + "', '" + email + "')", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO login VALUES ('" + username + "', '" + email + "', '" + password + "')", conn);
                 cmd.ExecuteNonQuery();
             }
             catch(Exception ex)
