@@ -10,3 +10,4 @@ MySQLNetworking class:
 .Seperate the conn string so that it won't be cumbersome to hardcode the sql server address
 .Code cleanup in SQL statements
 .Email confirmations after registration to verify account
+.Registration to check if a tuple in DB already exists
