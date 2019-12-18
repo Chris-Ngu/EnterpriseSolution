@@ -95,28 +95,17 @@ namespace EnterpriseSolution
         }
         private void login(string username, string password)
         {
-            //double check the connection string, not being able to connect, line 99
-            string connstring = @"server=127.0.0.1userid=root;password=password;database=enterprisesolution";
+            //Line 99 will mess up: Charset not found in key
+            string connstring = @"server=localhost;uid=root;pwd=password;database=enterprisesolution;CharSet=utf8";
             MySqlConnection conn = null;
-            try
-            {
-                conn = new MySqlConnection(connstring);
+            try { 
+                conn = new MySql.Data.MySqlClient.MySqlConnection();
+                conn.ConnectionString = connstring;
                 conn.Open();
-
-                string query = "SELECT * FROM LOGIN";
-                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
-                DataSet ds = new DataSet();
-                da.Fill(ds, "login");
-                DataTable dt = ds.Tables["login"];
-
-                foreach (DataRow row in dt.Rows)
-                {
-                    foreach (DataColumn col in dt.Columns)
-                    {
-                        Console.Write(row[col] + "\t");
-                    }
-                }
-                Console.Write("\n");
+                //line 106, not getting querie. Might need to test with some int
+                MySqlCommand cmd = new MySqlCommand("SELECT username FROM login l WHERE l.username =@username", conn);
+                cmd.Parameters.AddWithValue("@username", username);
+                MySqlDataReader dr = cmd.ExecuteReader();
             }
             catch (Exception ex)
             {
