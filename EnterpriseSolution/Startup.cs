@@ -102,7 +102,7 @@ namespace EnterpriseSolution
                 conn = new MySql.Data.MySqlClient.MySqlConnection();
                 conn.ConnectionString = connstring;
                 conn.Open();
-                //line 106, not getting querie. Might need to test with some int
+                //line 106, not getting querie. Might need to test with some int USING ' ' FOR USERNAME brackets maybe?
                 MySqlCommand cmd = new MySqlCommand("SELECT username FROM login l WHERE l.username =@username", conn);
                 cmd.Parameters.AddWithValue("@username", username);
                 MySqlDataReader dr = cmd.ExecuteReader();
