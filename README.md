@@ -27,6 +27,6 @@ Email system used for registration, notifications, or any other purposes
 
 # Working features
 
-Registration with MySQL server 12/18/19
+Registration and login with MySQL server 12/18/19
 
 
