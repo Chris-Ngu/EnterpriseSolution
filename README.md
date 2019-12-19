@@ -6,6 +6,7 @@ Experiental/Dev branch of EnterpriseSolution is Default with the most up-to-date
 Changes will be implemented there before pushed here
 
 Currently using MYSQL and connector/net for VS
+I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :) )
 
 This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, and the basic technological needs of an innovating business. If you would like to understand this concept or would like to help in development, please contact me on Discord: GruntyBunty#3342
 
