@@ -77,6 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainProgram.resx">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegConfirm.resx">
       <DependentUpon>RegConfirm.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,4 @@
-UI fixes   -Updated 12-18-19 by Chris Nguyen
+UI fixes   -Updated 12-19-19 by Chris Nguyen
 --------
 .Somehow remember login details without losing security for client users
 .Fix registration form transparency, might have to redo the whole form
@@ -15,4 +15,4 @@ MySQLNetworking class:
 
 DB adjustments
 -------
-.Need a field to check when the user registered and the last time they logged on
+Change from DATE last_logged_on to DATETIME last_logged_on
