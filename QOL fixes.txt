@@ -11,3 +11,8 @@ MySQLNetworking class:
 .Code cleanup in SQL statements
 .Email confirmations after registration to verify account
 .Registration to check if a tuple in DB already exists
+
+
+DB adjustments
+-------
+.Need a field to check when the user registered and the last time they logged on

@@ -88,7 +88,20 @@ namespace EnterpriseSolution
                 button1.Text = "Loading...";
                 string username = textBox1.Text;
                 string password = textBox2.Text;
-                EnterpriseSolution.MySQLNetworking.login(username, password);
+                bool loginStatus = EnterpriseSolution.MySQLNetworking.login(username, password);
+                if (loginStatus == true)
+                {
+                    MainProgram mp = new MainProgram();
+                    EnterpriseSolution.MySQLNetworking.UpdateLoginDate(username, password);
+                    this.Hide();
+                    mp.ShowDialog();
+                }
+                else if (loginStatus == false)
+                {
+                    button1.BackColor = Color.Maroon;
+                    button1.Text = "No account exists, try again";
+                }
+
             }
         }
     }
