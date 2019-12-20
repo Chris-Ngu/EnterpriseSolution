@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserCache.cs" />
     <Compile Include="Forms\MainProgram.cs">
       <SubType>Form</SubType>
     </Compile>
