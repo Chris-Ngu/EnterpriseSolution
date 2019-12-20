@@ -56,6 +56,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -385,12 +387,40 @@
             this.richTextBox2.TabIndex = 26;
             this.richTextBox2.Text = "NOTES\n---------";
             // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button9.Location = new System.Drawing.Point(698, 395);
+            this.button9.Name = "button9";
+            this.button9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button9.Size = new System.Drawing.Size(140, 29);
+            this.button9.TabIndex = 27;
+            this.button9.Text = "Specified Tasks";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.AcceptsTab = true;
+            this.richTextBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.Location = new System.Drawing.Point(698, 177);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBox3.Size = new System.Drawing.Size(286, 214);
+            this.richTextBox3.TabIndex = 28;
+            this.richTextBox3.Text = "PEER NOTES\n--------------";
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.progressBar1);
@@ -456,5 +486,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
