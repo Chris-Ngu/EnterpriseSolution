@@ -1,5 +1,7 @@
 # EnterpriseSolution
- FullStack implementation of a business solution to keep track and manage co-workers and tasks
+ Client based implementation of a business solution to keep track and manage co-workers and tasks
+ 
+ Currently thinking about porting to fullstack application with web-based interface
 
 Experiental/Dev branch of EnterpriseSolution is Default with the most up-to-date features
 
