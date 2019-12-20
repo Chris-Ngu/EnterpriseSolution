@@ -50,40 +50,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainProgram.cs">
+    <Compile Include="Forms\MainProgram.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainProgram.Designer.cs">
+    <Compile Include="Forms\MainProgram.Designer.cs">
       <DependentUpon>MainProgram.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegConfirm.cs">
+    <Compile Include="Forms\RegConfirm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegConfirm.Designer.cs">
+    <Compile Include="Forms\RegConfirm.Designer.cs">
       <DependentUpon>RegConfirm.cs</DependentUpon>
     </Compile>
     <Compile Include="MySQLNetworking.cs" />
-    <Compile Include="Registration.cs">
+    <Compile Include="Forms\Registration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration.Designer.cs">
+    <Compile Include="Forms\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Startup.cs">
+    <Compile Include="Forms\Startup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Startup.Designer.cs">
+    <Compile Include="Forms\Startup.Designer.cs">
       <DependentUpon>Startup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainProgram.resx">
+    <EmbeddedResource Include="Forms\MainProgram.resx">
       <DependentUpon>MainProgram.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegConfirm.resx">
+    <EmbeddedResource Include="Forms\RegConfirm.resx">
       <DependentUpon>RegConfirm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registration.resx">
+    <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -95,7 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Startup.resx">
+    <EmbeddedResource Include="Forms\Startup.resx">
       <DependentUpon>Startup.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
