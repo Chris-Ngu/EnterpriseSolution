@@ -33,6 +33,7 @@ music player that detects audio files in selected folders to play client side
 Registration and login with MySQL server 12/18/19
 
 # Images 
-*all images are WIP designs and are based mainly on pre-existing designs. Subject to change*
+*All images are WIP designs and are based mainly on pre-existing designs. Subject to change*
+
 ![image](https://user-images.githubusercontent.com/57853013/71142237-66d55480-21dc-11ea-8ec4-4cb92307fde8.png)
 ![image](https://user-images.githubusercontent.com/57853013/71293460-132d4d00-233b-11ea-9229-dac078f7285e.png)
