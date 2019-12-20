@@ -93,6 +93,7 @@ namespace EnterpriseSolution
                 {
                     MainProgram mp = new MainProgram();
                     EnterpriseSolution.MySQLNetworking.UpdateLoginDate(username, password);
+                    EnterpriseSolution.UserCache.SetUsername(username);
                     this.Hide();
                     mp.ShowDialog();
                 }

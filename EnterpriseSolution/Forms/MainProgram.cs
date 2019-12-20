@@ -40,5 +40,10 @@ namespace EnterpriseSolution
         {
             Application.Exit();
         }
+
+        private void MainProgram_Activated(object sender, EventArgs e)
+        {
+            this.textBox2.Text = "Welcome back, " + EnterpriseSolution.UserCache.GetUsername();
+        }
     }
 }

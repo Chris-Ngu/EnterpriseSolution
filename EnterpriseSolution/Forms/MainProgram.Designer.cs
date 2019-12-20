@@ -181,6 +181,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -238,11 +239,12 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(371, 578);
+            this.textBox2.Location = new System.Drawing.Point(475, 577);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(421, 18);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(317, 18);
             this.textBox2.TabIndex = 16;
-            this.textBox2.Text = "Welcome back, USER_PLACEHOLDER";
+            this.textBox2.Text = "Loading, please wait...";
             // 
             // pictureBox3
             // 
@@ -301,6 +303,7 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -455,6 +458,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainProgram";
             this.Text = "Form2";
+            this.Activated += new System.EventHandler(this.MainProgram_Activated);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainProgram_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainProgram_MouseMove);
             this.panel1.ResumeLayout(false);
