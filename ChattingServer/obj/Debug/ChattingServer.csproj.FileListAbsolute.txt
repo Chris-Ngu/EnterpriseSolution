@@ -7,3 +7,4 @@ C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.csproj.CopyComplete
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.exe
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingInterfaces.dll.config

@@ -22,3 +22,6 @@ C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.pdb
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.RegConfirm.resources
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.MainProgram.resources
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.dll
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.dll.config

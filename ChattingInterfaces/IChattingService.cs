@@ -8,9 +8,10 @@ using System.Text;
 namespace ChattingInterfaces
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IChattingService" in both code and config file together.
-    [ServiceContract]
+    [ServiceContract(CallbackContract = typeof(IClient))]
     public interface IChattingService
     {
-     
+        [OperationContract]
+        void Test(string value);
     }
 }

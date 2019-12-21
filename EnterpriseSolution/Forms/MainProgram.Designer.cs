@@ -61,9 +61,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -458,29 +459,41 @@
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Location = new System.Drawing.Point(233, 29);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(762, 542);
+            this.panel2.Size = new System.Drawing.Size(762, 556);
             this.panel2.TabIndex = 30;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.button12);
             this.panel3.Controls.Add(this.button11);
             this.panel3.Controls.Add(this.richTextBox5);
             this.panel3.Controls.Add(this.richTextBox4);
-            this.panel3.Location = new System.Drawing.Point(236, 12);
+            this.panel3.Location = new System.Drawing.Point(233, 16);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(759, 556);
             this.panel3.TabIndex = 31;
             // 
-            // richTextBox4
+            // button12
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(9, 3);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.ReadOnly = true;
-            this.richTextBox4.Size = new System.Drawing.Size(743, 431);
-            this.richTextBox4.TabIndex = 22;
-            this.richTextBox4.Text = "";
+            this.button12.Location = new System.Drawing.Point(480, 526);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(98, 23);
+            this.button12.TabIndex = 25;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(638, 525);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(98, 23);
+            this.button11.TabIndex = 24;
+            this.button11.Text = "Send";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // richTextBox5
             // 
@@ -491,14 +504,14 @@
             this.richTextBox5.TabIndex = 23;
             this.richTextBox5.Text = "";
             // 
-            // button11
+            // richTextBox4
             // 
-            this.button11.Location = new System.Drawing.Point(638, 525);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(98, 23);
-            this.button11.TabIndex = 24;
-            this.button11.Text = "Send";
-            this.button11.UseVisualStyleBackColor = true;
+            this.richTextBox4.Location = new System.Drawing.Point(9, 3);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(743, 431);
+            this.richTextBox4.TabIndex = 22;
+            this.richTextBox4.Text = "";
             // 
             // MainProgram
             // 
@@ -512,7 +525,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainProgram";
             this.Text = "Form2";
@@ -572,5 +584,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Button button12;
     }
 }

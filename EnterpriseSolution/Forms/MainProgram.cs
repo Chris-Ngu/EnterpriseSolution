@@ -1,9 +1,11 @@
-﻿using System;
+﻿using ChattingInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,11 +14,13 @@ namespace EnterpriseSolution
 {
     public partial class MainProgram : Form
     {
-
+        public static IChattingService server;
+        private static DuplexChannelFactory<IChattingService> _channelFactory; //sending and receiving to and from server bidirectional 
         public MainProgram()
         {
             InitializeComponent();
-            panel3.Hide();
+            _channelFactory = new DuplexChannelFactory<IChattingService>(new ClientCallback(), "ChattingServiceEndPoint");
+            server = _channelFactory.CreateChannel();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -70,6 +74,11 @@ namespace EnterpriseSolution
         private void button6_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            server.Test("Hello World");
         }
     }
 }
