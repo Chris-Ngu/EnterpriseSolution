@@ -43,7 +43,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -59,13 +58,16 @@
             this.button9 = new System.Windows.Forms.Button();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.button10 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -75,7 +77,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(974, 12);
+            this.button3.Location = new System.Drawing.Point(983, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(35, 34);
             this.button3.TabIndex = 12;
@@ -102,7 +104,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(136, 577);
+            this.linkLabel1.Location = new System.Drawing.Point(7, 582);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(64, 13);
             this.linkLabel1.TabIndex = 20;
@@ -115,7 +117,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(11, 561);
+            this.button7.Location = new System.Drawing.Point(10, 550);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button7.Size = new System.Drawing.Size(94, 29);
@@ -137,6 +139,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "Custom";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -151,6 +154,7 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "Email";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -165,6 +169,7 @@
             this.button4.TabIndex = 16;
             this.button4.Text = "Calander";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -178,6 +183,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Messenger";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -205,6 +211,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Management";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -246,24 +253,15 @@
             this.textBox2.TabIndex = 16;
             this.textBox2.Text = "Loading, please wait...";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(242, 19);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(141, 115);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox3.Location = new System.Drawing.Point(251, 161);
+            this.textBox3.Location = new System.Drawing.Point(12, 137);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(421, 19);
+            this.textBox3.Size = new System.Drawing.Size(147, 19);
             this.textBox3.TabIndex = 18;
             this.textBox3.Text = "Currently Online";
             // 
@@ -272,7 +270,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(251, 186);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 162);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -283,7 +281,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(242, 194);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 170);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(141, 368);
             this.pictureBox4.TabIndex = 19;
@@ -295,7 +293,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox4.Location = new System.Drawing.Point(648, 27);
+            this.textBox4.Location = new System.Drawing.Point(409, 3);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(144, 19);
             this.textBox4.TabIndex = 20;
@@ -307,7 +305,7 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(648, 52);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(409, 28);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -318,7 +316,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(404, 76);
+            this.pictureBox5.Location = new System.Drawing.Point(165, 52);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(590, 365);
             this.pictureBox5.TabIndex = 21;
@@ -327,7 +325,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(404, 447);
+            this.pictureBox6.Location = new System.Drawing.Point(165, 423);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(590, 115);
             this.pictureBox6.TabIndex = 22;
@@ -336,7 +334,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(416, 456);
+            this.richTextBox1.Location = new System.Drawing.Point(177, 432);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -351,7 +349,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Location = new System.Drawing.Point(844, 397);
+            this.button8.Location = new System.Drawing.Point(605, 373);
             this.button8.Name = "button8";
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button8.Size = new System.Drawing.Size(140, 29);
@@ -361,7 +359,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(437, 111);
+            this.progressBar1.Location = new System.Drawing.Point(198, 87);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(527, 23);
             this.progressBar1.Step = 1;
@@ -374,7 +372,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox5.Location = new System.Drawing.Point(437, 140);
+            this.textBox5.Location = new System.Drawing.Point(198, 116);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(173, 19);
             this.textBox5.TabIndex = 25;
@@ -384,7 +382,7 @@
             // 
             this.richTextBox2.AcceptsTab = true;
             this.richTextBox2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(428, 175);
+            this.richTextBox2.Location = new System.Drawing.Point(189, 151);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.richTextBox2.Size = new System.Drawing.Size(253, 249);
@@ -397,7 +395,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(698, 397);
+            this.button9.Location = new System.Drawing.Point(459, 373);
             this.button9.Name = "button9";
             this.button9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button9.Size = new System.Drawing.Size(140, 29);
@@ -409,7 +407,7 @@
             // 
             this.richTextBox3.AcceptsTab = true;
             this.richTextBox3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox3.Location = new System.Drawing.Point(698, 177);
+            this.richTextBox3.Location = new System.Drawing.Point(459, 153);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.ReadOnly = true;
             this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
@@ -428,6 +426,37 @@
             this.button10.TabIndex = 29;
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(141, 115);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.tableLayoutPanel2);
+            this.panel2.Controls.Add(this.richTextBox3);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.richTextBox2);
+            this.panel2.Controls.Add(this.tableLayoutPanel3);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.progressBar1);
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Location = new System.Drawing.Point(233, 29);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(762, 542);
+            this.panel2.TabIndex = 30;
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,25 +464,11 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainProgram";
@@ -465,10 +480,12 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,7 +507,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -506,5 +522,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel2;
     }
 }

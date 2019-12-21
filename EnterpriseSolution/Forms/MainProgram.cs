@@ -17,7 +17,6 @@ namespace EnterpriseSolution
         {
             InitializeComponent();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -44,6 +43,31 @@ namespace EnterpriseSolution
         private void MainProgram_Activated(object sender, EventArgs e)
         {
             this.textBox2.Text = "Welcome back, " + EnterpriseSolution.UserCache.GetUsername();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel2.Hide();
         }
     }
 }
