@@ -16,6 +16,7 @@ namespace EnterpriseSolution
         public MainProgram()
         {
             InitializeComponent();
+            panel3.Hide();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -48,6 +49,7 @@ namespace EnterpriseSolution
         private void button2_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+            panel3.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

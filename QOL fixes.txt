@@ -1,7 +1,7 @@
-UI fixes   -Updated 12-20-19 by Chris Nguyen
+UI fixes   -Updated 12-21-19 by Chris Nguyen
 --------
 .Somehow remember login details without losing security for client users
-.Fix registration form transparency, might have to redo the whole form
+.Fix registration form transparency, might have to redo the whole form (INTEGRATE THE TWO FORMS INTO ONE)
 .Placeholder pictures being used, create logo and actual photos
 .Ability to change accent colors
 .Save notes from dashboard to binary file
@@ -17,4 +17,4 @@ MySQLNetworking class:
 
 DB adjustments
 -------
-Change from DATE last_logged_on to DATETIME last_logged_on
+Change from DATE last_logged_on to DATETIME last_logged_on from time logged off
