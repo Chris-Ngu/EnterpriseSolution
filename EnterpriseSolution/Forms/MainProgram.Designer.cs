@@ -61,7 +61,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -463,20 +465,40 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.button11);
+            this.panel3.Controls.Add(this.richTextBox5);
+            this.panel3.Controls.Add(this.richTextBox4);
             this.panel3.Location = new System.Drawing.Point(236, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(759, 556);
             this.panel3.TabIndex = 31;
             // 
-            // textBox6
+            // richTextBox4
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(0, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(756, 62);
-            this.textBox6.TabIndex = 21;
-            this.textBox6.Text = "This is a test ";
+            this.richTextBox4.Location = new System.Drawing.Point(9, 3);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(743, 431);
+            this.richTextBox4.TabIndex = 22;
+            this.richTextBox4.Text = "";
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.Location = new System.Drawing.Point(9, 449);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.ReadOnly = true;
+            this.richTextBox5.Size = new System.Drawing.Size(743, 70);
+            this.richTextBox5.TabIndex = 23;
+            this.richTextBox5.Text = "";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(638, 525);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(98, 23);
+            this.button11.TabIndex = 24;
+            this.button11.Text = "Send";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // MainProgram
             // 
@@ -508,7 +530,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,6 +569,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox richTextBox4;
     }
 }

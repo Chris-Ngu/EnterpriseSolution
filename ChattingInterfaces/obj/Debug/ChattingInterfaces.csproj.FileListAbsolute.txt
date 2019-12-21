@@ -1,0 +1,5 @@
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingInterfaces\bin\Debug\ChattingInterfaces.dll
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingInterfaces\bin\Debug\ChattingInterfaces.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingInterfaces\obj\Debug\ChattingInterfaces.csprojAssemblyReference.cache
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingInterfaces\obj\Debug\ChattingInterfaces.dll
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingInterfaces\obj\Debug\ChattingInterfaces.pdb

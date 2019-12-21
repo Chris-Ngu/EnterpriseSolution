@@ -1,0 +1,9 @@
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingServer.exe.config
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingServer.exe
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingServer.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingInterfaces.dll
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\bin\Debug\ChattingInterfaces.pdb
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.csprojAssemblyReference.cache
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.csproj.CopyComplete
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.exe
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\ChattingServer\obj\Debug\ChattingServer.pdb
