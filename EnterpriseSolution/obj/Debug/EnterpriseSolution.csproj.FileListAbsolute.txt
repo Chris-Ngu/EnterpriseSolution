@@ -25,3 +25,4 @@ C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.dll
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.pdb
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\ChattingInterfaces.dll.config
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\WindowsBase.dll

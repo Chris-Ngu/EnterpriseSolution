@@ -8,6 +8,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace EnterpriseSolution
@@ -16,11 +17,30 @@ namespace EnterpriseSolution
     {
         public static IChattingService server;
         private static DuplexChannelFactory<IChattingService> _channelFactory; //sending and receiving to and from server bidirectional 
+        System.Drawing.Point lastPoint;
+
+        public static explicit operator MainProgram(Window v)
+        {
+            throw new NotImplementedException();
+        }
+
         public MainProgram()
         {
             InitializeComponent();
             _channelFactory = new DuplexChannelFactory<IChattingService>(new ClientCallback(), "ChattingServiceEndPoint");
             server = _channelFactory.CreateChannel();
+
+            //Logging into chat server whenever the form gets generated
+            int returnValue = server.Login(EnterpriseSolution.UserCache.GetUsername());
+            if (returnValue  == 1)
+            {
+                textBox6.Text = "Status: YOU ARE ALREADY LOGGED IN, TRY AGAIN";
+            }
+            else if (returnValue == 0)
+            {
+                textBox6.Text = "Status: Logged in";
+                textBox6.Enabled = false;
+            }
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -34,15 +54,15 @@ namespace EnterpriseSolution
                 this.Top += e.Y - lastPoint.Y;
             }
         }
-        Point lastPoint;
+        
         private void MainProgram_MouseDown(object sender, MouseEventArgs e)
         {
-            lastPoint = new Point(e.X, e.Y);
+            lastPoint = new System.Drawing.Point(e.X, e.Y);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void MainProgram_Activated(object sender, EventArgs e)
@@ -75,10 +95,15 @@ namespace EnterpriseSolution
         {
             panel2.Hide();
         }
-
-        private void button12_Click(object sender, EventArgs e)
+        public void TakeMessage(string message, string username)
         {
-            server.Test("Hello World");
+            richTextBox4.Text += username + ": " + message + "\n";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            server.SendMessageToAll(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //sends the messages to all people connected to the chat
+            TakeMessage(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //Takes the message into the textbox client side
         }
     }
 }
