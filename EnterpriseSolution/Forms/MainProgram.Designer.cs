@@ -61,10 +61,10 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -475,6 +475,13 @@
             this.panel3.Size = new System.Drawing.Size(759, 556);
             this.panel3.TabIndex = 31;
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(12, 525);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(620, 20);
+            this.textBox6.TabIndex = 25;
+            // 
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(638, 525);
@@ -489,7 +496,6 @@
             // 
             this.richTextBox5.Location = new System.Drawing.Point(9, 449);
             this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
             this.richTextBox5.Size = new System.Drawing.Size(743, 70);
             this.richTextBox5.TabIndex = 23;
             this.richTextBox5.Text = "";
@@ -503,21 +509,14 @@
             this.richTextBox4.TabIndex = 22;
             this.richTextBox4.Text = "";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(12, 525);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(620, 20);
-            this.textBox6.TabIndex = 25;
-            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);

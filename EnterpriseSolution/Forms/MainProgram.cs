@@ -17,12 +17,13 @@ namespace EnterpriseSolution
     {
         public static IChattingService server;
         private static DuplexChannelFactory<IChattingService> _channelFactory; //sending and receiving to and from server bidirectional 
-        System.Drawing.Point lastPoint;
 
         public static explicit operator MainProgram(Window v)
         {
             throw new NotImplementedException();
         }
+
+        System.Drawing.Point lastPoint;
 
         public MainProgram()
         {
@@ -104,6 +105,7 @@ namespace EnterpriseSolution
         {
             server.SendMessageToAll(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //sends the messages to all people connected to the chat
             TakeMessage(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //Takes the message into the textbox client side
+            richTextBox5.Clear();
         }
     }
 }

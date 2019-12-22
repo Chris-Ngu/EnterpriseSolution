@@ -16,7 +16,10 @@ namespace EnterpriseSolution
     {
         public void GetMessage(string message, string username)
         {
-            ((MainProgram)System.Windows.Application.Current.MainWindow).TakeMessage(message, username);
+            //Use line 20 if your program is in XAML, Line 21 is messy but it will have to do since it's almost daisy chaining
+            /* ((MainProgram)System.Windows.Application.Current.MainWindow).TakeMessage(message, username);*/
+            Startup.mp.TakeMessage(message, username);
+           
         }
 
 

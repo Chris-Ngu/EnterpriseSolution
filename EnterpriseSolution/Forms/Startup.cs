@@ -12,6 +12,7 @@ namespace EnterpriseSolution
 {
     public partial class Startup : Form
     {
+        public static MainProgram mp;
         public Startup()
         {
             InitializeComponent();
@@ -91,9 +92,9 @@ namespace EnterpriseSolution
                 bool loginStatus = EnterpriseSolution.MySQLNetworking.login(username, password);
                 if (loginStatus == true)
                 {
-                    MainProgram mp = new MainProgram();
                     EnterpriseSolution.MySQLNetworking.UpdateLoginDate(username, password);
                     EnterpriseSolution.UserCache.SetUsername(username);
+                    mp = new MainProgram();
                     this.Hide();
                     mp.ShowDialog();
                 }
