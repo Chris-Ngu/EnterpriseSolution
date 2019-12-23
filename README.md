@@ -32,7 +32,7 @@ music player that detects audio files in selected folders to play client side
 
 Registration and login with MySQL server 12/18/19
 
-IMessaging with TCP protocol using WCF framework 12/22/19
+IMessaging with TCP protocol using WCF framework 12/22/19 (Currently running duplex networking server hardcoded as localhost)
 
 # Contribution and future work
 
