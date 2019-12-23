@@ -75,11 +75,15 @@ namespace EnterpriseSolution
         {
             panel2.Hide();
             panel3.Show();
+            panel4.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+            panel3.Hide();
+            panel4.Show();
+            monthCalendar1.SetSelectionRange(DateTime.Today, DateTime.Today.AddMonths(2));
         }
 
         private void button1_Click(object sender, EventArgs e)
