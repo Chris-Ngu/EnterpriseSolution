@@ -10,7 +10,7 @@ Changes will be implemented there before pushed here
 Currently using MYSQL and connector/net for VS
 I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :) )
 
-This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, and the basic technological needs of an innovating business.
+This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
 # Experimental ideas in the works
 
