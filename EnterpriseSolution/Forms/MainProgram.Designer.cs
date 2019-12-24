@@ -68,6 +68,26 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,6 +98,7 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -528,12 +549,206 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button12);
+            this.panel5.Controls.Add(this.checkBox1);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.textBox13);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.textBox12);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.textBox11);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.textBox10);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.richTextBox6);
+            this.panel5.Controls.Add(this.textBox9);
+            this.panel5.Controls.Add(this.textBox8);
+            this.panel5.Controls.Add(this.textBox7);
+            this.panel5.Controls.Add(this.groupBox1);
+            this.panel5.Location = new System.Drawing.Point(236, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(773, 572);
+            this.panel5.TabIndex = 1;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(105, 60);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(617, 20);
+            this.textBox7.TabIndex = 0;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(105, 98);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(617, 20);
+            this.textBox8.TabIndex = 1;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(105, 135);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(617, 20);
+            this.textBox9.TabIndex = 2;
+            // 
+            // richTextBox6
+            // 
+            this.richTextBox6.Location = new System.Drawing.Point(105, 170);
+            this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.Size = new System.Drawing.Size(617, 224);
+            this.richTextBox6.TabIndex = 3;
+            this.richTextBox6.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "To: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(36, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "CC:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(36, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Subject:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(36, 178);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Message:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(116, 445);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Username:";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(186, 445);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(205, 20);
+            this.textBox10.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(116, 479);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Password:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(186, 479);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(205, 20);
+            this.textBox11.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(116, 514);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 20);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Port:";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(186, 514);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(66, 20);
+            this.textBox12.TabIndex = 12;
+            this.textBox12.Text = "587";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(258, 514);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 20);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "SMTP:";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(328, 514);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(275, 20);
+            this.textBox13.TabIndex = 14;
+            this.textBox13.Text = "smtp.gmail.com";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(444, 447);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(46, 17);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "SSL";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(444, 475);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 17;
+            this.button12.Text = "Send";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(105, 431);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(617, 115);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -561,6 +776,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,5 +824,25 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
