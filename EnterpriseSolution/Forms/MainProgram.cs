@@ -12,6 +12,7 @@ using System.Windows;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using S22.Imap;
 
 namespace EnterpriseSolution
 {
@@ -19,20 +20,14 @@ namespace EnterpriseSolution
     {
         public static IChattingService server;
         private static DuplexChannelFactory<IChattingService> _channelFactory;
-        NetworkCredential login;
-        SmtpClient client;
-        MailMessage msg;
-
-        public static explicit operator MainProgram(Window v)
-        {
-            throw new NotImplementedException();
-        }
+        static MainProgram f;
 
         System.Drawing.Point lastPoint;
 
         public MainProgram()
         {
             InitializeComponent();
+            f = this;
             _channelFactory = new DuplexChannelFactory<IChattingService>(new ClientCallback(), "ChattingServiceEndPoint");
             server = _channelFactory.CreateChannel();
 
@@ -124,44 +119,55 @@ namespace EnterpriseSolution
 
         private void button12_Click(object sender, EventArgs e)
         {
-            login = new NetworkCredential(textBox10.Text, textBox11.Text);
-            client = new SmtpClient(textBox13.Text);
-            client.Port = Convert.ToInt32(textBox12.Text);
-            client.EnableSsl = checkBox1.Checked;
-            client.Credentials = login;
-            msg = new MailMessage { From = new MailAddress(textBox10.Text + textBox13.Text.Replace("smtp.", "@"), EnterpriseSolution.UserCache.GetUsername(), Encoding.UTF8) };
-            msg.To.Add(new MailAddress(textBox7.Text));
+            var message = new MailMessage(textBox7.Text, textBox9.Text);
+            message.Subject = textBox10.Text;
+            message.Body = richTextBox6.Text;
 
-            if (!string.IsNullOrEmpty(textBox8.Text))
+            using (SmtpClient mailer = new SmtpClient("smtp.gmail.com", 587))
             {
-                msg.To.Add(new MailAddress(textBox8.Text));
+                mailer.Credentials = new NetworkCredential(textBox7.Text, textBox8.Text);
+                mailer.EnableSsl = true;
+                mailer.Send(message);
             }
-            msg.Subject = textBox9.Text;
-            msg.Body = richTextBox6.Text;
-            msg.BodyEncoding = Encoding.UTF8;
-            msg.IsBodyHtml = true;
-            msg.Priority = MailPriority.Normal;
-            msg.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
-            client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
-            string userstate = "Sending...";
-            client.SendAsync(msg, userstate);
-            
+
+            textBox9.Text = null;
+            textBox10.Text = null;
+            richTextBox6.Text = null;
+
         }
-        //Fix the messagebox issue and check the smtp to match an existing account(line 132)
-        private void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
+
+        private void button13_Click(object sender, EventArgs e)
         {
-            if (e.Cancelled)
+            StartReceiving();
+        }
+
+        private void StartReceiving()
+        {
+            Task.Run(() =>
             {
-                MessageBox.Show(string.Format("{0} send canceled.", e.UserState), "Message", MessageBoxButton.OK, MessageBoxIcon.Information);
-            }
-            if (e.Error!= null)
+                using (IImapClient client = new ImapClient("imap.gmail.com", 993, textBox7.Text,
+                        textBox8.Text, AuthMethod.Login, true))
+                {
+                    if (client.Supports("IDLE") == false)
+                    {
+                        System.Windows.MessageBox.Show("Server does not support IMAP IDLE");
+                        return;
+                    }
+                    client.NewMessage += new EventHandler<IdleMessageEventArgs>(OnNewMessage);
+                    while (true) ;
+                }
+            });
+        }
+        static void OnNewMessage(object sender, IdleMessageEventArgs e)
+        {
+            System.Windows.MessageBox.Show("New message");
+            MailMessage m = e.Client.GetMessage(e.MessageUID, FetchOptions.Normal);
+            f.Invoke((MethodInvoker)delegate
             {
-                MessageBox.Show(string.Format("{0} {1}", e.UserState, e.Error), "Message", MessageBoxButton.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Your message has been sent", "Message", MessageBoxButton.OK, MessageBoxIcon.Information);
-            }
+                f.richTextBox7.AppendText("From: " + m.From + "\n" +
+                                          "Subject: " + m.Subject + "\n" +
+                                           "Body: " + m.Body + "\n");
+            });
         }
     }
 }

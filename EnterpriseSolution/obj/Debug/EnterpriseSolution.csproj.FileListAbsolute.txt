@@ -45,3 +45,4 @@ C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\Google.Apis.Discovery.v1.pdb
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\Google.Apis.Discovery.v1.xml
 C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xxchr\Desktop\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\S22.Imap.dll
