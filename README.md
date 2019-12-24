@@ -20,9 +20,9 @@ Integrated messanger for group and individuals with filesharing (maybe screen sh
 
 Video calls
 
-Public calander system for branch/ individual events that can be seen by everyone
+Public calander system for branch/ individual events that can be seen by everyone (Possibly Google Calendar API)
 
-Email system used for registration, notifications, or any other purposes
+Email system used for registration, notifications, or any other purposes (Using System.Net.Email libraries)
 
 music player that detects audio files in selected folders to play client side
 
