@@ -34,7 +34,7 @@ Registration and login with MySQL server 12/18/19
 
 IMessaging with TCP protocol using WCF framework 12/22/19 (Currently running duplex networking server hardcoded as localhost)
 
-Email support using IMAP and Google App Password 12/24/19
+Email support using IMAP and Google App Password 12/24/19 (Smiley22's IMAP DLL)
 
 # Contribution and future work
 
