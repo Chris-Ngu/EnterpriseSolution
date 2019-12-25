@@ -88,6 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientCallback.cs" />
+    <Compile Include="enterprisesolutionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>enterprisesolutionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UserCache.cs" />
     <Compile Include="Forms\MainProgram.cs">
       <SubType>Form</SubType>
@@ -137,6 +142,17 @@
     <EmbeddedResource Include="Forms\Startup.resx">
       <DependentUpon>Startup.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="enterprisesolutionDataSet.xsc">
+      <DependentUpon>enterprisesolutionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="enterprisesolutionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>enterprisesolutionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="enterprisesolutionDataSet.xss">
+      <DependentUpon>enterprisesolutionDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

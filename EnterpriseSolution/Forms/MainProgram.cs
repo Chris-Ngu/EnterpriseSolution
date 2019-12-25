@@ -91,8 +91,13 @@ namespace EnterpriseSolution
         private void button1_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+            panel3.Hide();
+            panel4.Hide();
+            panel5.Hide();
+            panel6.Show();
+            dataGridView1.DataSource = MySQLNetworking.GetList();
+            
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             panel2.Hide();

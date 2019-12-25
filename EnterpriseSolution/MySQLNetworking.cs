@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -105,6 +106,36 @@ namespace EnterpriseSolution
                     conn.Close();
                 }
             }
+        }
+
+        public static DataTable GetList()
+        {
+            DataTable dt = new DataTable();
+            string connstring = @"server=localhost;uid=root;pwd=password;database=enterprisesolution;Charset=utf8";
+            MySqlConnection conn = null;
+            try
+            {
+                conn = new MySql.Data.MySqlClient.MySqlConnection();
+                conn.ConnectionString = connstring;
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("SELECT l.username, l.email, CONVERT(l.last_logged_on USING utf8) AS last_on FROM login l", conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                dt.Load(reader);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: {0}", ex.ToString());
+            }
+            finally
+            {
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+            return dt;
         }
         
     }

@@ -1,4 +1,4 @@
-UI fixes   -Updated 12-21-19 by Chris Nguyen
+UI fixes   -Updated 12-25-19 by Chris Nguyen
 --------
 .Somehow remember login details without losing security for client users
 .Fix registration form transparency, might have to redo the whole form (INTEGRATE THE TWO FORMS INTO ONE)
@@ -18,3 +18,4 @@ MySQLNetworking class:
 DB adjustments
 -------
 Change from DATE last_logged_on to DATETIME last_logged_on from time logged off
+.Add more tables, such as branch, department, and manager information
