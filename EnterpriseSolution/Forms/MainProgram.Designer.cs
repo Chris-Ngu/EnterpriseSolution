@@ -86,6 +86,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -95,7 +96,6 @@
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enterprisesolutionDataSet = new EnterpriseSolution.enterprisesolutionDataSet();
             this.loginTableAdapter = new EnterpriseSolution.enterprisesolutionDataSetTableAdapters.loginTableAdapter();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -733,13 +733,22 @@
             this.panel7.Size = new System.Drawing.Size(314, 84);
             this.panel7.TabIndex = 5;
             // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(162, 5);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(110, 20);
+            this.textBox12.TabIndex = 4;
+            this.textBox12.Text = "Insert SQL summary";
+            this.textBox12.Click += new System.EventHandler(this.textBox12_Click);
+            // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(6, 31);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(301, 20);
             this.textBox11.TabIndex = 1;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+//            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label8
             // 
@@ -772,11 +781,10 @@
             this.richTextBox8.ReadOnly = true;
             this.richTextBox8.Size = new System.Drawing.Size(350, 80);
             this.richTextBox8.TabIndex = 4;
-            this.richTextBox8.Text = "Queue\n-------------\n";
+            this.richTextBox8.Text = "Queue\n-------------";
             // 
             // button14
             // 
-            this.button14.Enabled = false;
             this.button14.Location = new System.Drawing.Point(313, 526);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(90, 20);
@@ -806,14 +814,6 @@
             // loginTableAdapter
             // 
             this.loginTableAdapter.ClearBeforeFill = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(162, 5);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(110, 20);
-            this.textBox12.TabIndex = 4;
-            this.textBox12.Text = "Insert SQL summary";
             // 
             // MainProgram
             // 

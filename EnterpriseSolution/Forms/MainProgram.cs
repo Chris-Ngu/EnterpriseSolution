@@ -179,25 +179,18 @@ namespace EnterpriseSolution
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Request request = new Request(UserCache.GetUsername(), DateTime.Now, textBox11.Text);
-            richTextBox8.Text += request.ToString();
-            queue.Enqueue(request);
-           
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-            if (comboBox2.Text != "" && textBox11.Text != "")
+            if (comboBox2.Text != "" && textBox11.Text != "" && !(textBox12.Text.Equals("Insert SQL summary")) && !(textBox12.Text.Equals("")))
             {
-                button14.Enabled = true;
-
+                Request request = new Request(UserCache.GetUsername(), DateTime.Now, textBox11.Text, textBox12.Text);
+                richTextBox8.Text += request.ToString();
+                queue.Enqueue(request);
             }
             else
             {
-                button4.Enabled = false;
+                System.Windows.MessageBox.Show("Please check if all fields are entered correctly and try again");
             }
-        }
 
+        }
         private void comboBox2_TextChanged(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
@@ -217,6 +210,11 @@ namespace EnterpriseSolution
             }
 
             dataGridView1.DataSource = MySQLNetworking.GetList(option);
+        }
+
+        private void textBox12_Click(object sender, EventArgs e)
+        {
+            textBox12.Text = "";
         }
     }
 }
