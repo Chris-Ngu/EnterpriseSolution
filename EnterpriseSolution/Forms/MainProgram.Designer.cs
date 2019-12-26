@@ -470,6 +470,7 @@
             this.button10.Size = new System.Drawing.Size(26, 26);
             this.button10.TabIndex = 29;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // pictureBox3
             // 
@@ -715,7 +716,6 @@
             // 
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.richTextBox8);
-            this.panel6.Controls.Add(this.button14);
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Location = new System.Drawing.Point(233, 0);
             this.panel6.Name = "panel6";
@@ -726,18 +726,19 @@
             // 
             this.panel7.Controls.Add(this.textBox12);
             this.panel7.Controls.Add(this.textBox11);
+            this.panel7.Controls.Add(this.button14);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.comboBox2);
             this.panel7.Location = new System.Drawing.Point(3, 481);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(314, 84);
+            this.panel7.Size = new System.Drawing.Size(400, 84);
             this.panel7.TabIndex = 5;
             // 
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(162, 5);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(110, 20);
+            this.textBox12.Size = new System.Drawing.Size(235, 20);
             this.textBox12.TabIndex = 4;
             this.textBox12.Text = "Insert SQL summary";
             this.textBox12.Click += new System.EventHandler(this.textBox12_Click);
@@ -746,9 +747,8 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(6, 31);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(301, 20);
+            this.textBox11.Size = new System.Drawing.Size(391, 20);
             this.textBox11.TabIndex = 1;
-//            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label8
             // 
@@ -785,9 +785,9 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(313, 526);
+            this.button14.Location = new System.Drawing.Point(294, 56);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(90, 20);
+            this.button14.Size = new System.Drawing.Size(103, 20);
             this.button14.TabIndex = 2;
             this.button14.Text = "Request";
             this.button14.UseVisualStyleBackColor = true;
@@ -821,10 +821,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.textBox2);

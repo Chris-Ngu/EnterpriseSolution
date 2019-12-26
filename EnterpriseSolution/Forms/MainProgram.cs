@@ -78,6 +78,7 @@ namespace EnterpriseSolution
             panel3.Show();
             panel4.Hide();
             panel5.Hide();
+            panel6.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -86,6 +87,7 @@ namespace EnterpriseSolution
             panel3.Hide();
             panel5.Hide();
             panel4.Show();
+            panel6.Hide();
             monthCalendar1.SetSelectionRange(DateTime.Today, DateTime.Today.AddMonths(2));
         }
 
@@ -215,6 +217,15 @@ namespace EnterpriseSolution
         private void textBox12_Click(object sender, EventArgs e)
         {
             textBox12.Text = "";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel2.Show();
+            panel3.Hide();
+            panel4.Hide();
+            panel5.Hide();
+            panel6.Hide();
         }
     }
 }
