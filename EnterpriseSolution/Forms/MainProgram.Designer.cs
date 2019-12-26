@@ -85,10 +85,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enterprisesolutionDataSet = new EnterpriseSolution.enterprisesolutionDataSet();
             this.loginTableAdapter = new EnterpriseSolution.enterprisesolutionDataSetTableAdapters.loginTableAdapter();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -101,9 +108,10 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enterprisesolutionDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -705,11 +713,63 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.richTextBox8);
+            this.panel6.Controls.Add(this.comboBox2);
+            this.panel6.Controls.Add(this.button14);
+            this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Location = new System.Drawing.Point(233, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(786, 571);
             this.panel6.TabIndex = 33;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Employee information",
+            "Department information",
+            "Supervising Dataset"});
+            this.comboBox2.Location = new System.Drawing.Point(209, 481);
+            this.comboBox2.MaxDropDownItems = 3;
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 3;
+            // 
+            // button14
+            // 
+            this.button14.Enabled = false;
+            this.button14.Location = new System.Drawing.Point(313, 526);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(90, 20);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Request";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Create record",
+            "Modify record",
+            "Delete record (Request queue)"});
+            this.comboBox1.Location = new System.Drawing.Point(15, 481);
+            this.comboBox1.MaxDropDownItems = 3;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(171, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 16);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(748, 459);
+            this.dataGridView1.TabIndex = 0;
             // 
             // loginBindingSource
             // 
@@ -725,13 +785,38 @@
             // 
             this.loginTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridView1
+            // richTextBox8
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(742, 459);
-            this.dataGridView1.TabIndex = 0;
+            this.richTextBox8.Location = new System.Drawing.Point(409, 481);
+            this.richTextBox8.Name = "richTextBox8";
+            this.richTextBox8.Size = new System.Drawing.Size(350, 80);
+            this.richTextBox8.TabIndex = 4;
+            this.richTextBox8.Text = "Queue\n-------------\n";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.textBox11);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Location = new System.Drawing.Point(3, 507);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(314, 58);
+            this.panel7.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(108, 44);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "MySQL statements";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(6, 19);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(301, 20);
+            this.textBox11.TabIndex = 1;
             // 
             // MainProgram
             // 
@@ -771,9 +856,11 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enterprisesolutionDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -840,5 +927,12 @@
         private System.Windows.Forms.BindingSource loginBindingSource;
         private enterprisesolutionDataSetTableAdapters.loginTableAdapter loginTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.RichTextBox richTextBox8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label8;
     }
 }

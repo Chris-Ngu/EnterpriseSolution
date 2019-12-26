@@ -174,5 +174,12 @@ namespace EnterpriseSolution
                                            "Body: " + m.Body + "\n");
             });
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string[] request = { (string)comboBox1.SelectedItem, (string)comboBox2.SelectedItem }; //request, table
+            //make a new method inside sqlnetworking that can take many parameters including sql statement
+            //enable button when boxes have been selected and a statement has been written
+        }
     }
 }
