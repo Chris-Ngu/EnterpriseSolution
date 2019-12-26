@@ -93,6 +93,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>enterprisesolutionDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Request.cs" />
     <Compile Include="UserCache.cs" />
     <Compile Include="Forms\MainProgram.cs">
       <SubType>Form</SubType>

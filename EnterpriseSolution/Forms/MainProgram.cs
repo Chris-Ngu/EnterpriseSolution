@@ -20,6 +20,7 @@ namespace EnterpriseSolution
     {
         public static IChattingService server;
         private static DuplexChannelFactory<IChattingService> _channelFactory;
+        private static Queue<Request> queue = new Queue<Request>();
         static MainProgram f;
 
         System.Drawing.Point lastPoint;
@@ -95,7 +96,8 @@ namespace EnterpriseSolution
             panel4.Hide();
             panel5.Hide();
             panel6.Show();
-            dataGridView1.DataSource = MySQLNetworking.GetList();
+            string option = "SELECT l.username, l.email, CONVERT(l.last_logged_on USING utf8) AS last_on FROM login l";
+            dataGridView1.DataSource = MySQLNetworking.GetList(option);
             
         }
         private void button5_Click(object sender, EventArgs e)
@@ -177,9 +179,44 @@ namespace EnterpriseSolution
 
         private void button14_Click(object sender, EventArgs e)
         {
-            string[] request = { (string)comboBox1.SelectedItem, (string)comboBox2.SelectedItem }; //request, table
-            //make a new method inside sqlnetworking that can take many parameters including sql statement
-            //enable button when boxes have been selected and a statement has been written
+            Request request = new Request(UserCache.GetUsername(), DateTime.Now, textBox11.Text);
+            richTextBox8.Text += request.ToString();
+            queue.Enqueue(request);
+           
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.Text != "" && textBox11.Text != "")
+            {
+                button14.Enabled = true;
+
+            }
+            else
+            {
+                button4.Enabled = false;
+            }
+        }
+
+        private void comboBox2_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            string option = "";
+
+            if (comboBox2.Text.Equals("Employee information"))
+            {
+                option = "Select l.username, l.email, CONVERT(l.last_logged_on USING utf8) as last_on FROM login l";
+            }
+            else if (comboBox2.Text.Equals("Department information"))
+            {
+                option = "SELECT CONVERT(Dno USING utf8) as Dno, Dname, Mgr FROM department";
+            }
+            else if (comboBox2.Text.Equals("Supervising Dataset"))
+            {
+                // need to add here whenever I add table in mysql
+            }
+
+            dataGridView1.DataSource = MySQLNetworking.GetList(option);
         }
     }
 }

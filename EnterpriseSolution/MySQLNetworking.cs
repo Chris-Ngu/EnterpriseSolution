@@ -108,7 +108,7 @@ namespace EnterpriseSolution
             }
         }
 
-        public static DataTable GetList()
+        public static DataTable GetList(string option)
         {
             DataTable dt = new DataTable();
             string connstring = @"server=localhost;uid=root;pwd=password;database=enterprisesolution;Charset=utf8";
@@ -119,7 +119,7 @@ namespace EnterpriseSolution
                 conn.ConnectionString = connstring;
                 conn.Open();
 
-                MySqlCommand cmd = new MySqlCommand("SELECT l.username, l.email, CONVERT(l.last_logged_on USING utf8) AS last_on FROM login l", conn);
+                MySqlCommand cmd = new MySqlCommand(option, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 dt.Load(reader);
