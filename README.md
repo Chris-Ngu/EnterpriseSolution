@@ -1,5 +1,5 @@
 # EnterpriseSolution
- Client based implementation of a business solution to keep track and manage co-workers and tasks
+Client based implementation of a business solution to keep track and manage co-workers and tasks
  
 Currently thinking about porting to fullstack application with web-based interface
 
@@ -7,14 +7,11 @@ Experiental/Dev branch of EnterpriseSolution is Default with the most up-to-date
 
 Changes will be implemented there before pushed here
 
-Currently using MYSQL and connector/net for VS
 I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :) )
 
 This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
 # Experimental ideas in the works
-
-Management system of co-workers/ branch
 
 Integrated messanger for group and individuals with filesharing (maybe screen sharing in the future)
 
@@ -22,19 +19,19 @@ Video calls
 
 Email system used for registration, notifications, or any other purposes (Using System.Net.Email libraries)
 
-music player that detects audio files in selected folders to play client side
-
 *MORE IDEAS WILL BE ADDED HERE AND SOME WILL BE DELETED AS THINGS GET IMPLEMENTED*
 
 # Working features
 
-Registration and login with MySQL server 12/18/19
+Registration and login with MySQL server using MySQL connector/net 12/18/19
 
 IMessaging with TCP protocol using WCF framework 12/22/19 (Currently running duplex networking server hardcoded as localhost)
 
 Email support using IMAP and Google App Password 12/24/19 (Smiley22's IMAP DLL)
 
-Group calendar (ported from existing Google Calendar API assests to CefSharp Chromium browser using TeamUp)
+MySQL like UI for managing co-workers and branch information 12/26/19
+
+Group calendar 12/27/19 (ported from existing Google Calendar API assests to CefSharp Chromium browser using TeamUp)
 
 # Contribution and future work
 
