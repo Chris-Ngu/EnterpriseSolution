@@ -13,9 +13,6 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using S22.Imap;
-using CefSharp;
-using CefSharp.WinForms;
-using EnterpriseSolution.Forms;
 
 namespace EnterpriseSolution
 {
@@ -67,7 +64,6 @@ namespace EnterpriseSolution
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Cef.Shutdown();
             System.Windows.Forms.Application.Exit();
         }
 
@@ -92,8 +88,7 @@ namespace EnterpriseSolution
             panel5.Hide();
             panel4.Show();
             panel6.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
+            monthCalendar1.SetSelectionRange(DateTime.Today, DateTime.Today.AddMonths(2));
         }
 
         private void button1_Click(object sender, EventArgs e)
