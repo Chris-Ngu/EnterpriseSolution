@@ -13,7 +13,8 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using S22.Imap;
-using EnterpriseSolution.Forms;
+using CefSharp;
+using CefSharp.WinForms;
 
 namespace EnterpriseSolution
 {
@@ -21,6 +22,7 @@ namespace EnterpriseSolution
     {
         public static IChattingService server;
         private static DuplexChannelFactory<IChattingService> _channelFactory;
+        public ChromiumWebBrowser chrome;
         private static Queue<Request> queue = new Queue<Request>();
         static MainProgram f;
 
@@ -29,6 +31,11 @@ namespace EnterpriseSolution
         public MainProgram()
         {
             InitializeComponent();
+            InitializeChrome();
+            panel2.Show();
+            panel3.Hide();
+            panel4.Hide();
+            panel5.Hide();
             f = this;
             _channelFactory = new DuplexChannelFactory<IChattingService>(new ClientCallback(), "ChattingServiceEndPoint");
             server = _channelFactory.CreateChannel();
@@ -84,16 +91,21 @@ namespace EnterpriseSolution
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            panel4.Show();
             panel2.Hide();
             panel3.Hide();
             panel5.Hide();
-            panel4.Show();
-            panel6.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
-            
-        }
 
+        }
+        private void InitializeChrome()
+        {
+            CefSettings settings = new CefSettings();
+            Cef.Initialize(settings);
+            chrome = new ChromiumWebBrowser("https://teamup.com/ksyi1rb8biep5reynj");
+            this.panel4.Controls.Add(chrome);
+            chrome.Dock = DockStyle.Fill;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             panel2.Hide();

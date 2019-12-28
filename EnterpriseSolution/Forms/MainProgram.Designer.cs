@@ -67,7 +67,6 @@
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -88,10 +87,10 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.button14 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enterprisesolutionDataSet = new EnterpriseSolution.enterprisesolutionDataSet();
@@ -105,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -550,18 +548,10 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.monthCalendar1);
-            this.panel4.Location = new System.Drawing.Point(233, 0);
+            this.panel4.Location = new System.Drawing.Point(233, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(776, 572);
+            this.panel4.Size = new System.Drawing.Size(776, 564);
             this.panel4.TabIndex = 32;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 1);
-            this.monthCalendar1.Location = new System.Drawing.Point(15, 36);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
             // 
             // panel5
             // 
@@ -750,6 +740,16 @@
             this.textBox11.Size = new System.Drawing.Size(391, 20);
             this.textBox11.TabIndex = 1;
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(294, 56);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(103, 20);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "Request";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -783,16 +783,6 @@
             this.richTextBox8.TabIndex = 4;
             this.richTextBox8.Text = "Queue\n-------------";
             // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(294, 56);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(103, 20);
-            this.button14.TabIndex = 2;
-            this.button14.Text = "Request";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -822,9 +812,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.textBox2);
@@ -849,7 +839,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -902,7 +891,6 @@
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
