@@ -91,10 +91,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enterprisesolutionDataSet = new EnterpriseSolution.enterprisesolutionDataSet();
             this.loginTableAdapter = new EnterpriseSolution.enterprisesolutionDataSetTableAdapters.loginTableAdapter();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -107,9 +109,9 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enterprisesolutionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -180,7 +182,7 @@
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button6.Size = new System.Drawing.Size(181, 29);
             this.button6.TabIndex = 18;
-            this.button6.Text = "Custom";
+            this.button6.Text = "Settings";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -260,9 +262,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(167, 74);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -507,9 +509,9 @@
             this.panel3.Controls.Add(this.button11);
             this.panel3.Controls.Add(this.richTextBox5);
             this.panel3.Controls.Add(this.richTextBox4);
-            this.panel3.Location = new System.Drawing.Point(233, 16);
+            this.panel3.Location = new System.Drawing.Point(236, 16);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(759, 556);
+            this.panel3.Size = new System.Drawing.Size(756, 556);
             this.panel3.TabIndex = 31;
             // 
             // textBox6
@@ -570,9 +572,9 @@
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(236, 0);
+            this.panel5.Location = new System.Drawing.Point(233, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(773, 572);
+            this.panel5.Size = new System.Drawing.Size(776, 572);
             this.panel5.TabIndex = 1;
             // 
             // button13
@@ -707,9 +709,9 @@
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.richTextBox8);
             this.panel6.Controls.Add(this.dataGridView1);
-            this.panel6.Location = new System.Drawing.Point(233, 0);
+            this.panel6.Location = new System.Drawing.Point(239, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(786, 571);
+            this.panel6.Size = new System.Drawing.Size(780, 571);
             this.panel6.TabIndex = 33;
             // 
             // panel7
@@ -783,14 +785,6 @@
             this.richTextBox8.TabIndex = 4;
             this.richTextBox8.Text = "Queue\n-------------";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 459);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // loginBindingSource
             // 
             this.loginBindingSource.DataMember = "login";
@@ -805,6 +799,31 @@
             // 
             this.loginTableAdapter.ClearBeforeFill = true;
             // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(233, 8);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(783, 564);
+            this.panel8.TabIndex = 34;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(175, 44);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.TabIndex = 21;
+            this.button15.Text = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 16);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(748, 459);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -812,17 +831,20 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1019, 602);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainProgram";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Activated += new System.EventHandler(this.MainProgram_Activated);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainProgram_MouseDown);
@@ -844,9 +866,9 @@
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enterprisesolutionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -911,7 +933,6 @@
         private enterprisesolutionDataSet enterprisesolutionDataSet;
         private System.Windows.Forms.BindingSource loginBindingSource;
         private enterprisesolutionDataSetTableAdapters.loginTableAdapter loginTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.RichTextBox richTextBox8;
@@ -919,5 +940,8 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
