@@ -199,6 +199,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Startup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Startup_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Startup_MouseMove);

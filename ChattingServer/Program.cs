@@ -9,6 +9,7 @@ namespace ChattingServer
 {
     class Program
     {
+
         public static ChattingService _server; //Only one instance created
         static void Main(string[] args)
         {
@@ -17,8 +18,12 @@ namespace ChattingServer
             {
                 host.Open();
                 Console.WriteLine("Server is up and running");
-                Console.ReadLine();
+                /*Console.ReadLine();*/
+                new System.Threading.ManualResetEvent(false).WaitOne();
             }
+            
         }
     }
 }
+
+

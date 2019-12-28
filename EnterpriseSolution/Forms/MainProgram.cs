@@ -128,6 +128,11 @@ namespace EnterpriseSolution
         private void button6_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+            panel3.Hide();
+            panel4.Hide();
+            panel5.Hide();
+            panel6.Hide();
+
         }
         public void TakeMessage(string message, string username)
         {
