@@ -9,10 +9,4 @@
 [1228/103611.651:ERROR:browser_process_sub_thread.cc(221)] Waited 20 ms for network service
 [1228/110755.160:ERROR:browser_process_sub_thread.cc(221)] Waited 15 ms for network service
 [1228/110853.791:ERROR:browser_process_sub_thread.cc(221)] Waited 16 ms for network service
-[1228/113249.311:ERROR:browser_process_sub_thread.cc(221)] Waited 16 ms for network service
-[1228/122814.321:ERROR:browser_process_sub_thread.cc(221)] Waited 17 ms for network service
-[1228/123619.951:ERROR:browser_process_sub_thread.cc(221)] Waited 16 ms for network service
-[1228/123959.891:ERROR:browser_process_sub_thread.cc(221)] Waited 21 ms for network service
-[1228/124439.703:ERROR:browser_process_sub_thread.cc(221)] Waited 23 ms for network service
-[1228/124900.408:ERROR:browser_process_sub_thread.cc(221)] Waited 18 ms for network service
-[1228/125153.926:ERROR:browser_process_sub_thread.cc(221)] Waited 15 ms for network service
+[1228/194541.030:ERROR:browser_process_sub_thread.cc(221)] Waited 22 ms for network service

@@ -96,8 +96,6 @@ namespace EnterpriseSolution
             panel2.Hide();
             panel3.Hide();
             panel5.Hide();
-            panel6.Hide();
-            panel8.Hide();
 
         }
         private void InitializeChrome()
@@ -115,7 +113,6 @@ namespace EnterpriseSolution
             panel4.Hide();
             panel5.Hide();
             panel6.Show();
-            panel8.Hide();
             string option = "SELECT l.username, l.email, CONVERT(l.last_logged_on USING utf8) AS last_on FROM login l";
             dataGridView1.DataSource = MySQLNetworking.GetList(option);
             
@@ -126,8 +123,6 @@ namespace EnterpriseSolution
             panel3.Hide();
             panel4.Hide();
             panel5.Show();
-            panel6.Hide();
-            panel8.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -137,7 +132,6 @@ namespace EnterpriseSolution
             panel4.Hide();
             panel5.Hide();
             panel6.Hide();
-            panel8.Show();
 
         }
         public void TakeMessage(string message, string username)
@@ -252,63 +246,6 @@ namespace EnterpriseSolution
             panel4.Hide();
             panel5.Hide();
             panel6.Hide();
-            panel8.Hide();
-        }
-
-        //Could create private method to move all panels to resize on open space
-        bool toggled = false;
-        private void button15_Click(object sender, EventArgs e)
-        {
-            //if tab is out
-            if (toggled == false) 
-            {
-                HideTab();
-
-            }
-            //if tab is already minimized
-            else if (toggled == true)
-            {
-                ShowTab();
-            }
-        }
-        //Seperate into different private methods to move elements around on panel
-        private void HideTab()
-        {
-            toggled = true;
-            button10.Location = new System.Drawing.Point(11, 11);
-            button15.Location = new System.Drawing.Point(11, 44);
-            panel1.Hide();
-            panel2.Size = new System.Drawing.Size(946, 556);
-            panel2.Location = new System.Drawing.Point(49, 8);
-            panel6.Size = new System.Drawing.Size(978, 571);
-            panel6.Location = new System.Drawing.Point(41, 0);
-            panel3.Size = new System.Drawing.Size(961, 556);
-            panel3.Location = new System.Drawing.Point(31, 16);
-            panel4.Size = new System.Drawing.Size(975, 564);
-            panel4.Location = new System.Drawing.Point(34, 8);
-            panel5.Size = new System.Drawing.Size(976, 572);
-            panel5.Location = new System.Drawing.Point(33, 0);
-            panel8.Size = new System.Drawing.Size(980, 564);
-            panel8.Location = new System.Drawing.Point(36, 8);
-        }
-        private void ShowTab()
-        {
-            toggled = false;
-            button10.Location = new System.Drawing.Point(210, 12);
-            button15.Location = new System.Drawing.Point(66, 44);
-            panel1.Show();
-            panel2.Size = new System.Drawing.Size(762, 556);
-            panel2.Location = new System.Drawing.Point(233, 8);
-            panel6.Size = new System.Drawing.Size(780, 571);
-            panel6.Location = new System.Drawing.Point(239, 0);
-            panel3.Size = new System.Drawing.Size(759, 556);
-            panel3.Location = new System.Drawing.Point(233, 16);
-            panel4.Size = new System.Drawing.Size(776, 564);
-            panel4.Location = new System.Drawing.Point(233, 8);
-            panel5.Size = new System.Drawing.Size(773, 572);
-            panel5.Location = new System.Drawing.Point(236, 0);
-            panel8.Size = new System.Drawing.Size(783, 564);
-            panel8.Location = new System.Drawing.Point(233, 8);
         }
     }
 }
