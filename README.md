@@ -3,11 +3,7 @@ Client based implementation of a business solution to keep track and manage co-w
  
 Currently thinking about porting to fullstack application with web-based interface
 
-Experiental/Dev branch of EnterpriseSolution is Default with the most up-to-date features
-
-Changes will be implemented there before pushed here
-
-I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :) )
+I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :))
 
 This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
@@ -34,7 +30,7 @@ MySQL like UI for managing co-workers and branch information 12/26/19
 
 Group calendar 12/27/19 (ported from existing Google Calendar API assests to CefSharp Chromium browser using TeamUp)
 
-User preferences and cache 12/29/19
+Cache and serialization to upload to MySQL server 12/29/19
 
 # Contribution and future work
 
