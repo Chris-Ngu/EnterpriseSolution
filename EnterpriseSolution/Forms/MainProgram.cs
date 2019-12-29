@@ -15,6 +15,10 @@ using System.Net.Mail;
 using S22.Imap;
 using CefSharp;
 using CefSharp.WinForms;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace EnterpriseSolution
 {
@@ -41,7 +45,7 @@ namespace EnterpriseSolution
             server = _channelFactory.CreateChannel();
 
             //Logging into chat server whenever the form gets generated
-            int returnValue = server.Login(EnterpriseSolution.UserCache.GetUsername());
+            int returnValue = server.Login(EnterpriseSolution.UserCache.username);
             if (returnValue  == 1)
             {
                 textBox6.Text = "Status: YOU ARE ALREADY LOGGED IN, TRY AGAIN";
@@ -77,7 +81,7 @@ namespace EnterpriseSolution
 
         private void MainProgram_Activated(object sender, EventArgs e)
         {
-            this.textBox2.Text = "Welcome back, " + EnterpriseSolution.UserCache.GetUsername();
+            this.textBox2.Text = "Welcome back, " + EnterpriseSolution.UserCache.username;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -141,8 +145,8 @@ namespace EnterpriseSolution
 
         private void button11_Click(object sender, EventArgs e)
         {
-            server.SendMessageToAll(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //sends the messages to all people connected to the chat
-            TakeMessage(richTextBox5.Text, EnterpriseSolution.UserCache.GetUsername()); //Takes the message into the textbox client side
+            server.SendMessageToAll(richTextBox5.Text, EnterpriseSolution.UserCache.username); //sends the messages to all people connected to the chat
+            TakeMessage(richTextBox5.Text, EnterpriseSolution.UserCache.username); //Takes the message into the textbox client side
             richTextBox5.Clear();
         }
 
@@ -203,7 +207,7 @@ namespace EnterpriseSolution
         {
             if (comboBox2.Text != "" && textBox11.Text != "" && !(textBox12.Text.Equals("Insert SQL summary")) && !(textBox12.Text.Equals("")))
             {
-                Request request = new Request(UserCache.GetUsername(), DateTime.Now, textBox11.Text, textBox12.Text);
+                Request request = new Request(UserCache.username, DateTime.Now, textBox11.Text, textBox12.Text);
                 richTextBox8.Text += request.ToString();
                 queue.Enqueue(request);
             }
@@ -246,6 +250,27 @@ namespace EnterpriseSolution
             panel4.Hide();
             panel5.Hide();
             panel6.Hide();
+        }
+        //Serializing to store into MySQL server
+        private void button15_Click(object sender, EventArgs e)
+        {
+            //XML
+            Notes note = new Notes(richTextBox2.Text);
+            XmlSerializer serializer = new XmlSerializer(typeof(Notes));
+            using (TextWriter tw = new StreamWriter(@"C:\Users\xxchr\Desktop\Notes.xml"))
+            {
+                serializer.Serialize(tw, note);
+            }
+            note = null;
+
+            //Deserializer
+         /*   XmlSerializer deserializer = new XmlSerializer(typeof(string));
+            TextReader reader = new StreamReader(@"C:\Users\xxchr\Desktop\Notes.xml");
+            object obj = deserializer.Deserialize(reader);
+            note = (Notes)obj;
+            reader.Close();
+            Console.WriteLine(note.ToString());
+             */
         }
     }
 }

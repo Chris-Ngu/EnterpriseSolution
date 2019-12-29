@@ -79,6 +79,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>enterprisesolutionDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Notes.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="UserCache.cs" />
     <Compile Include="Forms\MainProgram.cs">

@@ -8,18 +8,9 @@ namespace EnterpriseSolution
 {
     public static class UserCache
     {
-        //Do not store password in cache, no need to and big security problem
-        private static string username;//Setting: when logged in
-        private static string personalNotes; //Setting: When saving text document (this is what is saved to the MySql server)
-                                              //Serialize into byte array and insert as BLOB data type or deserialize as xml/Json
+        //Careful what you put in the cache, don't put sensitive information here 
+        public static string username { get; set; }
 
-        public static void SetUsername(string x)
-        {
-            username = x;
-        }
-        public static string GetUsername()
-        {
-            return username;
-        }
     }
+
 }

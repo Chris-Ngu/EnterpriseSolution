@@ -50,7 +50,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -95,12 +94,12 @@
             this.loginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enterprisesolutionDataSet = new EnterpriseSolution.enterprisesolutionDataSet();
             this.loginTableAdapter = new EnterpriseSolution.enterprisesolutionDataSetTableAdapters.loginTableAdapter();
+            this.button15 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -365,15 +364,6 @@
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(165, 423);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(590, 115);
-            this.pictureBox6.TabIndex = 22;
-            this.pictureBox6.TabStop = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -481,6 +471,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button15);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
@@ -495,7 +486,6 @@
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Location = new System.Drawing.Point(233, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(762, 556);
@@ -805,6 +795,16 @@
             // 
             this.loginTableAdapter.ClearBeforeFill = true;
             // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(348, 162);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.TabIndex = 29;
+            this.button15.Text = "button15";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
             // MainProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -833,7 +833,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -874,7 +873,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ProgressBar progressBar1;
@@ -919,5 +917,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button15;
     }
 }

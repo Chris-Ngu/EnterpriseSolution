@@ -93,7 +93,7 @@ namespace EnterpriseSolution
                 if (loginStatus == true)
                 {
                     EnterpriseSolution.MySQLNetworking.UpdateLoginDate(username, password);
-                    EnterpriseSolution.UserCache.SetUsername(username);
+                    EnterpriseSolution.UserCache.username = username;
                     mp = new MainProgram();
                     this.Hide();
                     mp.ShowDialog();
