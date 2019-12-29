@@ -33,6 +33,8 @@ MySQL like UI for managing co-workers and branch information 12/26/19
 
 Group calendar 12/27/19 (ported from existing Google Calendar API assests to CefSharp Chromium browser using TeamUp)
 
+User preferences and cache 12/29/19
+
 # Contribution and future work
 
 If you would like to understand this concept or would like to help in development, please contact me on Discord: GruntyBunty#3342. I have included a QOLFixes.Txt in the repository in case you just want to get your feet wet. There are very small fixes in the program that could be fixed, but I have no time for them currently and the list will go on forever. That's where you could come in: my first priority in the application is to get the modules working so UI is a second priority. If you have any type of UI work or would like to contribute sample artwork, feel free to :)
