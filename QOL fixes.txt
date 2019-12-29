@@ -1,10 +1,10 @@
-UI fixes   -Updated 12-25-19 by Chris Nguyen
+UI fixes   -Updated 12-29-19 by Chris Nguyen
 --------
 .Somehow remember login details without losing security for client users
 .Fix registration form transparency, might have to redo the whole form (INTEGRATE THE TWO FORMS INTO ONE)
 .Placeholder pictures being used, create logo and actual photos
 .Ability to change accent colors
-.Save notes from dashboard to binary file
+.Rename all the UI elements
 
 Class cleanup
 -------
@@ -13,6 +13,7 @@ MySQLNetworking class:
 .Code cleanup in SQL statements
 .Email confirmations after registration to verify account
 .Registration to check if a tuple in DB already exists
+.Seperate serializer and allow destination of saving 
 
 
 DB adjustments

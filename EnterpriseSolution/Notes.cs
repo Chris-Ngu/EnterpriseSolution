@@ -5,34 +5,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace EnterpriseSolution
 {
     [Serializable()]
     public class Notes : ISerializable
     {
-        private string header = "Notes\n-----";
-        private string noteToSave;
+        public string header { get; set; }
+        public string noteToSave { get; set; }
 
-        public Notes()
+        private Notes()
         {
-            this.noteToSave = null;
+            this.header = "NO_PARAM_HEADER";
+            this.noteToSave = "NO_PARAM_NOTE";
         }
         public Notes(string noteToSave)
         {
+            this.header = "Notes\n-----";
             this.noteToSave = noteToSave;
         }
 
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            info.AddValue("Header", header);
-            info.AddValue("Note", noteToSave);
+            info.AddValue("header", header);
+            info.AddValue("noteToSave", noteToSave);
         }
         
         public Notes(SerializationInfo info,StreamingContext context)
         {
-            header = (string)info.GetValue("Header", typeof(string));
-            noteToSave = (string)info.GetValue("Note", typeof(string));
+            header = (string)info.GetValue("header", typeof(string));
+            noteToSave = (string)info.GetValue("noteToSave", typeof(string));
         }
+
+        public override string ToString()
+        {
+            return (this.header + "\n" + this.noteToSave);
+        }
+
+
     }
 }
