@@ -12,6 +12,7 @@ I will be uploading the MySQL schema when the final touches are being done, stil
 This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
 # Experimental ideas in the works
+Main screen is using a placeholder atm since this is probably the most interwoven component and relies on other parts to work first
 
 Integrated messanger for group and individuals with filesharing (maybe screen sharing in the future)
 
