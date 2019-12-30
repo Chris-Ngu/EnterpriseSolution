@@ -3,9 +3,9 @@ Client based implementation of a business solution to keep track and manage co-w
  
 Currently thinking about porting to fullstack application with web-based interface
 
-I will be uploading the MySQL schema when the final touches are being done, stil WIP (or will upload upon direct request :))
+SQL Schema has been uploaded, but the tables will need to be populated in order to get past the Login screen and use Management tab
 
-This program will not be used for commerical purposes. I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
+I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
 # Experimental ideas in the works
 Main screen is using a placeholder atm since this is probably the most interwoven component and relies on other parts to work first
