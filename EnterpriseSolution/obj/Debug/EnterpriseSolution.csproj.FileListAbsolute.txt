@@ -233,3 +233,4 @@ C:\Users\xxchr\Desktop\Project\EnterpriseSolution\EnterpriseSolution\EnterpriseS
 C:\Users\xxchr\Desktop\Project\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\x64\CefSharp.WinForms.dll
 C:\Users\xxchr\Desktop\Project\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\x64\CefSharp.WinForms.pdb
 C:\Users\xxchr\Desktop\Project\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\bin\Debug\x64\CefSharp.WinForms.XML
+C:\Users\xxchr\Desktop\Project\EnterpriseSolution\EnterpriseSolution\EnterpriseSolution\obj\Debug\EnterpriseSolution.Splash.resources

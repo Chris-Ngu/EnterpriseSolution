@@ -18,7 +18,18 @@ namespace EnterpriseSolution
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Thread t = new Thread(new ThreadStart(SplashScreen));
+            t.Start();
+            Thread.Sleep(2000);
+            t.Abort();
+
             Application.Run(new Startup());
+        }
+        public static void SplashScreen()
+        {
+            Application.Run(new Splash());
+            
         }
 
 
