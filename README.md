@@ -8,15 +8,17 @@ SQL Schema has been uploaded, but the tables will need to be populated in order 
 I am creating this to better understand the concepts of programming, such as modular implementation, networking, APIs, and different frameworks that a company would use 
 
 # Experimental ideas in the works
+_*Most of these features would be fixed with the move from localhost hardwire to MySQL cluster or half MongoDB half MySQL*_
+
+*MORE IDEAS WILL BE ADDED HERE AND SOME WILL BE DELETED AS THINGS GET IMPLEMENTED*
+
 Main screen is using a placeholder atm since this is probably the most interwoven component and relies on other parts to work first
 
 Integrated messanger for group and individuals with filesharing (maybe screen sharing in the future)
 
 Video calls
 
-Email system used for registration, notifications, or any other purposes (Using System.Net.Email libraries)
-
-*MORE IDEAS WILL BE ADDED HERE AND SOME WILL BE DELETED AS THINGS GET IMPLEMENTED*
+Email system used for registration, notifications, or any other purposes (Possible security token here)
 
 # Working features
 
@@ -38,6 +40,8 @@ If you would like to understand this concept or would like to help in developmen
 
 # Images 
 *All images are WIP designs and are based mainly on pre-existing designs. Subject to change*
+
+![image](https://user-images.githubusercontent.com/57853013/72667159-4a485a00-39de-11ea-936e-a7b6b5583681.png)
 
 ![image](https://user-images.githubusercontent.com/57853013/71142237-66d55480-21dc-11ea-8ec4-4cb92307fde8.png)
 
