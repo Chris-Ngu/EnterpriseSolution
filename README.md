@@ -1,7 +1,7 @@
 # EnterpriseSolution
 Client based implementation of a business solution to keep track and manage co-workers and tasks
- 
-Currently thinking about porting to fullstack application with web-based interface
+
+This is using a lot of .NET frameworks, so testing should be exclusivly done on windows machines. For the web based implementation, look into my other repository: EnterproseSolution-WEB
 
 SQL Schema has been uploaded, but the tables will need to be populated in order to get past the Login screen and use Management tab
 
